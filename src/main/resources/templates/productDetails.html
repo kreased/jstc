@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>Hello there, here are your product details in a super basic UI:</p>
+    <table border=1>
+        <tr>
+            <td>ASIN</td>
+            <td th:text="${asin}"/>
+        </tr><tr>
+            <td>Title</td>
+            <td th:text="${TITLE}"/>
+        </tr><tr>
+            <td>Category</td>
+            <td th:text="${CATEGORY}"/>
+        </tr><tr>
+            <td>Rank</td>
+            <td th:text="${RANK}"/>
+        </tr><tr>
+            <td>Dimensions</td>
+            <td th:text="${DIMENSIONS}"/>
+        </tr>
+    </table>
+    
+    <p>Check out other products by putting the ASIN in the URL. If you've viewed it before, the result is fetched from database cache.</p>
+    
+</body>
+</html>
